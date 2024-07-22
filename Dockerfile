@@ -19,5 +19,5 @@ RUN pip install jupyterlab
 
 COPY ./monitor/telegraf.conf /etc/telegraf/telegraf.conf
 COPY start.sh .
-EXPOSE 9100 9835 9999
+EXPOSE 40100 40101 40102
 ENTRYPOINT bash start.sh
